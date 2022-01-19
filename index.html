@@ -30,19 +30,20 @@
                 </div>
                 <div class="position2">
                     <label class="allLabels" id="label2" for="html">Profissão</label>
-                    <label class="allLabels" id="label3" for="html">Celular</label><br>
+                    <label class="allLabels" id="label3" for="html" placeholder="00000-0000">Celular</label><br>
                     <input name="user_profession" class="allInput" type="text" id="professiontxt">           
                     <input name="user_number" class="allInput" type="text" id="numbertxt">
                  </div>
                 <div class="position3">
                     <label class="allLabels" id="label4" for="html">Meu IP</label>
-                    <h3 class="iptext" id="textip"></h3>
+                   <input type="text" class="iptext" id="textip" readonly>
                     <button type="button" onclick="main()" class="btnip">Obter IP</button>
                 </div>
                 <div class="position4">
-                    <button type="submit" class="save">Salvar</button>
-                     <button type="reset" class="clear">Limpar</button>
+                    <button type="button" onclick="salvarDados()" class="save">Salvar</button>
+                     <button type="reset" onclick="clearAll()" class="clear">Limpar</button>
                 </div>
+
             </form>
  
 

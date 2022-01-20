@@ -54,3 +54,24 @@ window.onload = function() {
     document.getElementById('textip').readOnly = true;
   }
 
+
+
+function numberMask(){
+
+    var masknumber = document.getElementById("numbertxt");
+    
+    if(masknumber.value.length == 1){
+        masknumber.value ='(' + masknumber.value 
+    }
+
+    if(masknumber.value.length == 3){
+        masknumber.value = masknumber.value + ')'
+    }
+    if (masknumber.value.length == 9){
+        masknumber.value = masknumber.value + '-'
+    }
+
+
+};
+
+

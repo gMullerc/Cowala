@@ -31,8 +31,9 @@
                 <div class="position2">
                     <label class="allLabels" id="label2" for="html">Profissão</label>
                     <label class="allLabels" id="label3" for="html" placeholder="00000-0000">Celular</label><br>
-                    <input name="user_profession" class="allInput" type="text" id="professiontxt">           
-                    <input name="user_number" class="allInput" type="text" id="numbertxt">
+                    <input name="user_profession" class="allInput" type="text" id="professiontxt"> 
+
+                    <input name="user_number" class="allInput" type="text" id="numbertxt" autocomplete="off" maxlength="14" onkeyup="numberMask()">
                  </div>
                 <div class="position3">
                     <label class="allLabels" id="label4" for="html">Meu IP</label>
